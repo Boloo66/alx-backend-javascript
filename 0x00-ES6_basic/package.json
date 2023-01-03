@@ -260,9 +260,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node"
+    "dev": "node",
+    "lint": "eslint ./"
     
   },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
