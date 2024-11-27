@@ -1,6 +1,6 @@
-const { readFile } = require("fs");
+import { readFile } from "fs";
 
-module.exports = function readDatabase(filePath) {
+export default function readDatabase(filePath) {
   const students = {};
   return new Promise((resolve, reject) => {
     readFile(filePath, (err, data) => {
@@ -23,4 +23,4 @@ module.exports = function readDatabase(filePath) {
       }
     });
   });
-};
+}
